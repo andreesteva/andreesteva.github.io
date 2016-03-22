@@ -37,6 +37,38 @@
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+    .paper-title {
+      font-size: large;
+    }
+    .paper-authors {
+      font-style: italic;
+      font-size: small;
+    }
+    .paper-image {
+      width: 100%;
+      margin-bottom: 20%;
+    }
+    .paper-venue {
+      margin-bottom: 3%;
+    }
+
+    .experience-title{
+      font-size: large;
+    }
+    .experience-info {
+      margin-bottom: 3%;
+      font-style: italic;
+    }
+    .experience-image {
+      width: 100%;
+      margin-bottom: 20%;
+    }
+    .col-xs-3 .col-left {
+
+    }
+    </style>
   </head>
 
 <!-- NAVBAR
@@ -59,7 +91,7 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about" >About</a></li>
+                <!-- <li><a href="#about" >About</a></li> -->
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -89,8 +121,8 @@
           <div class="container">
             <div class="carousel-caption">
               <h1 class="carousel-heading">Andre Esteva</h1>
-              <h3 class="carousel-heading">Stanford PhD student </h3>
-              <small> esteva _at_ cs.stanford.edu </small> <br>
+              <!-- <h4 class="carousel-heading">Stanford PhD student </h4> -->
+              <!-- <small> esteva _at_ cs.stanford.edu </small> <br> -->
             <img class="img-circle" src="assets/imgme.png" alt="Generic placeholder image" width="140" height="140">
 
             </div>
@@ -109,29 +141,6 @@
 
     <div class="container marketing">
 
-      <!-- ~~~~~~~~~~~~~~~~~~  MISSION STATEMENT -->
-
-
-<!--       <div class="container quote">
-        <blockquote>
-        Mission Statement: To deploy AI technologies at scale in order to significantly prolong the lives and wellbeing of millions of people.
-        </blockquote>
-      </div>
- -->
-<!--       <div class="row featurette">
-        <div class="col-sm-12">
-          <i>
-          <h1 class="featurette-heading" align="center">
-            Mission Statement <br>
-          </h1>
-          <h2  align="center">
-            <span class="text-muted"> To deploy AI technologies at scale in order to significantly prolong the lives and wellbeing of millions of people.
-            </span>
-          </h2>
-        </i>
-        </div>
-      </div> -->
-
       <!-- ~~~~~~~~~~~~~~~~~~  ABOUT -->
       <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -141,17 +150,18 @@
       <div class="row featurette" id="about">
         <div class="col-sm-12">
           <h1 class="featurette-heading">
-             About <hr>
-          </h2>
+             <!-- About <hr> -->
+             <hr>
+          </h1>
         </div>
       </div>
 
       <div class="row featurette">
-        <div class="col-md-4">
-          <img src="assets/stanford_logo.gif" width="300"></img>
+        <div class="col-xs-4 col-md-4">
+          <img src="assets/stanford_logo.gif" width="100%"></img>
         </div>
-        <div class="col-md-8">
-          <h4 class="featurette-heading">Stanford PhD, <span class="text-muted">Artifical Intelligence </span><br>
+        <div class="col-xs-8 col-md-8">
+          <h4 class="featurette-heading">Stanford PhD, <span class="text-muted">Artificial Intelligence </span><br>
           </h4>
           <p class="lead">I'm an Electrical Engineering PhD student in <a href="http://robots.stanford.edu" target="_blank"> Sebastian Thrun's Group </a> at Stanford, as part of the Artificial Intelligence Lab of Computer Science. My research focus is in machine learning and deep learning, and my preferred application domains are medical and biological systems. My current focus is in dermatology, where I am developing deep-learning algorithms to automatically track and diagnose skin cancers from images of patients. Previous work spans large-scale drug screening, neuroscience, and psychiatry. I have limited availability for consulting and advising. </p>
         </div>
@@ -165,14 +175,14 @@
 
 
       <div class="row featurette">
-        <div class="col-md-8">
-          <h3 class="featurette-heading">
+        <div class="col-xs-8 col-md-8">
+          <h4 class="featurette-heading">
             UT-Austin, <span class="text-muted"> Electrical Engineering and Math</span><br>
-          </h3>
+          </h4>
           <p class="lead">I double majored in Electrical & Computer Engineering, and Pure Mathematics. My research at the time was in invisibility cloaking as part of Andrea Alu's <a href="http://users.ece.utexas.edu/~aalu/" target="_blank"> Metamaterials and Plasmonics Research Lab </a>. Hook 'em horns.</p>
         </div>
-         <div class="col-md-4">
-          <img src="assets/ut-tower.jpg" width="200" align="bottom"></img>
+         <div class="col-xs-4 col-md-4">
+          <img src="assets/ut-tower.jpg" width="100%" align="bottom"></img>
         </div>
       </div>
 
@@ -190,64 +200,60 @@
       </div>
 
       <div class="row featurette">
-        <div class="col-md-4">
-          <h3>
-            <img src="assets/pull.png" width="300"></img>
-          </h3>
+        <div class="col-xs-3">
+          <div class="paper-image">
+            <img src="assets/pull.png" width="100%"></img>
+          </div>
         </div>
-        <div class="col-md-8">
-          <h3>
-            Vision-Based Classification of Developmental Disorders using Eye Movements <br>
-            <small><i> Guido Pusiol, <strong> Andre Esteva</strong>, Li Fei-Fei, Michael Frank, Scott Hall</i> </small>
-            <br>
-            <small> <strong>
-                Submitted
-            </strong> </small>
-            <br>
-          </h3>
-          <p></p>
-        </div>
-      </div>
-
-      <div class="row featurette">
-        <div class="col-md-4">
-          <h3>
-            <img src="assets/affordances.png" width="300"></img>
-          </h3>
-        </div>
-        <div class="col-md-8">
-          <h3>
-            Visual Scenes are Categorized by Function <br>
-            <small><i> Michelle Greene, Christopher Baldassano, <strong> Andre Esteva</strong>,
-                Diane M. Beck, Li Fei-Fei </i> </small>
-            <br>
-            <small> <strong>
-                <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4693295/" target="_blank">
-                  Journal of Experimental Psychology</a>
-            </strong> </small>
-            <br>
-          </h3>
-          <p></p>
+        <div class="col-xs-9">
+          <div class="paper-title">
+              Vision-Based Classification of Developmental Disorders using Eye Movements
+              </div>
+          <div class="paper-authors">
+              Guido Pusiol, <strong> Andre Esteva</strong>, Li Fei-Fei, Michael Frank, Scott Hall
+              </div>
+          <div class="paper-venue">
+              Submitted          
+              </div>
         </div>
       </div>
 
       <div class="row featurette">
-        <div class="col-md-4">
-          <h3>
-            <img src="assets/two-network.png" width="200"></img>
-          </h3>
+        <div class="col-xs-3">
+          <h4>
+            <img src="assets/affordances.png" width="100%"></img>
+          </h4>
         </div>
-        <div class="col-md-8">
-          <h3>
-            Two Distinct Scene Processing Networks Connecting Vision and Memory<br>
-            <small><i> Christopher Baldassano, <strong> Andre Esteva</strong>, Diane M. Beck, Li Fei-Fei </i> </small>
-            <br>
-            <small> <strong>
-                <a href="http://jov.arvojournals.org/article.aspx?articleid=2433679&resultClick=1" target="_blank">Journal of Vision</a>
-            </strong> </small>
-            <br>
-          </h3>
-          <p></p>
+        <div class="col-xs-9">
+          <div class="paper-title">
+              Visual Scenes are Categorized by Function
+              </div>
+          <div class="paper-authors">
+              Michelle Greene, Christopher Baldassano, <strong> Andre Esteva</strong>, Diane M. Beck, Li Fei-Fei
+              </div>
+          <div class="paper-venue">
+              <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4693295/" target="_blank">
+                  Journal of Experimental Psychology</a>          
+              </div>
+        </div>
+      </div>
+
+      <div class="row featurette">
+        <div class="col-xs-3">
+          <h4>
+            <img src="assets/two-network.png" width="100%"></img>
+          </h4>
+        </div>
+        <div class="col-xs-9">
+          <div class="paper-title">
+            Two Distinct Scene Processing Networks Connecting Vision and Memory
+              </div>
+          <div class="paper-authors">
+              Christopher Baldassano, <strong> Andre Esteva</strong>, Diane M. Beck, Li Fei-Fei
+              </div>
+          <div class="paper-venue">
+              <a href="http://jov.arvojournals.org/article.aspx?articleid=2433679&resultClick=1" target="_blank">Journal of Vision</a>
+              </div>
         </div>
       </div>
 
@@ -258,56 +264,54 @@
 
       <div class="row featurette" id="publications">
         <div class="col-sm-12">
-          <h1 class="featurette-heading">Conference Presentations and Workshops<hr>
+          <h1 class="featurette-heading">Conference Presentations<hr>
           </h1>
         </div>
       </div>
 
       <div class="row featurette">
         <div class="col-md-12">
-          <h3>
-            Two distinct scene processing networks connecting vision and memory.<br>
-            <small><i> 
-            	C. Baldassano, A. Esteva, D.M. Beck, L. Fei-Fei
-            	</i> </small><br>
-            <small> <strong>
-              Oral Presentation <br>
-              <a href="http://jov.arvojournals.org/article.aspx?articleid=2433679" target="_blank"> Vision Sciences Society Annual Meeting (VSS), 2015</a>
-            </strong> </small>
-            <br>
-          </h3>
-          <p></p>
+          <div class="paper-title">
+            Two Distinct Scene Processing Networks Connecting Vision and Memory
+              </div>
+          <div class="paper-authors">
+              Christopher Baldassano, <strong> Andre Esteva</strong>, Diane M. Beck, Li Fei-Fei
+              </div>
+          <div class="paper-venue">
+              Oral Presentation, 
+              <a href="http://jov.arvojournals.org/article.aspx?articleid=2433679&resultClick=1" target="_blank">Journal of Vision</a>
+              </div>
         </div>
       </div>
 
       <div class="row featurette">
         <div class="col-md-12">
-          <h3>
-          Functions Provide a Fundamental Categorization Principle for Scenes. <br>
-          <small><i>
-          	M.R. Greene, C. Baldassano, A. Esteva, D.M. Beck, L. Fei-Fei. 
-          	</i></small><br>
-          <small><strong>
-          	Oral Presentation<br>
-          	<a href="http://jov.arvojournals.org/article.aspx?articleid=2433680" target="_blank">
-		  	Vision Sciences Society Annual Meeting (VSS), 2015</a>
-          </h3>
-          <p></p>
+          <div class="paper-title">
+            Functions Provide a Fundamental Categorization Principle for Scenes
+              </div>
+          <div class="paper-authors">
+            M.R. Greene, C. Baldassano, A. Esteva, D.M. Beck, L. Fei-Fei. 
+              </div>
+          <div class="paper-venue">
+            Oral Presentation, 
+            <a href="http://jov.arvojournals.org/article.aspx?articleid=2433680" target="_blank">
+              Vision Sciences Society Annual Meeting (VSS), 2015</a>
+              </div>
         </div>
       </div>
 
       <div class="row featurette">
         <div class="col-md-12">
-          <h3>
-		  Comparing and parcellating voxel-scale multimodal human brain connectivity. <br>
-          <small><i>
-			C. Baldassano, A. Esteva, D.M. Beck, L. Fei-Fei.  
-          	</i></small><br>
-          <small><strong>
-          	Poster Presentation<br>
-		  	Fourth Biennial Conference on Resting State / Brain Connectivity, Cambridge, MA, 2014</a>
-          </h3>
-          <p></p>
+          <div class="paper-title">
+            Comparing and parcellating voxel-scale multimodal human brain connectivity
+              </div>
+          <div class="paper-authors">
+            C. Baldassano, A. Esteva, D.M. Beck, L. Fei-Fei.
+              </div>
+          <div class="paper-venue">
+            Poster Presentation, 
+            Fourth Biennial Conference on Resting State / Brain Connectivity, Cambridge, MA, 2014
+              </div>
         </div>
       </div>
 
@@ -325,44 +329,40 @@
 
       <div class="row featurette">
         <!-- <div class="col-md-4">
-          <h3>
-            <img src="assets/research_at_google.png" width="200"></img>
-          </h3>
+          <h4>
+            <img src="assets/research_at_google.png" width="100%"></img>
+          </h4>
         </div> -->
         <div class="col-md-8">
-          <h3 align="top">
+          <div class="paper-title">
             On the Technology Prospects and Investment Opportunities for Scalable Neuroscience
-            <br>
-            <small><i> Thomas Dean, Biafra Ahanonu, Mainak Chowdhury, Anjali Datta, <strong>Andre Esteva</strong>,
-                Daniel Eth, Nobie Redmon, Oleg Rumyantsev, Ysis Tarter </i> </small>
-            <br>
-            <small> <strong>
-              <a href="http://arxiv.org/abs/1307.7302" target="_blank"> arXiv 2013 </a>
-            </strong> </small>
-            <br>
-          </h3>
-          <p></p>
+              </div>
+          <div class="paper-authors">
+            Thomas Dean, Biafra Ahanonu, Mainak Chowdhury, Anjali Datta, <strong>Andre Esteva</strong>,
+                Daniel Eth, Nobie Redmon, Oleg Rumyantsev, Ysis Tarter
+              </div>
+          <div class="paper-venue">
+            <a href="http://arxiv.org/abs/1307.7302" target="_blank"> arXiv 2013 </a>
+              </div>
         </div>
       </div>
 
       <div class="row featurette">
 <!--         <div class="col-md-4">
-          <h3>
-            <img src="assets/metamaterials.png" width="200"></img>
-          </h3>
+          <h4>
+            <img src="assets/metamaterials.png" width="100%"></img>
+          </h4>
         </div> -->
         <div class="col-md-8">
-          <h3>
-            Metamaterial Structural Design, <i> Undergraduate Thesis </i>
-            <br>
-            <small><i> Andre Esteva, Dean Neikirk, Andrea Alu</i> </small>
-            <br>
-            <small> <strong>
+          <div class="paper-title">
+            Metamaterial Structural Design, <span class="text-muted"><i>Undergraduate Thesis</i></span>
+              </div>
+          <div class="paper-authors">
+            Andre Esteva, Dean Neikirk, Andrea Alu
+              </div>
+          <div class="paper-venue">
               <a href="http://repositories.lib.utexas.edu/bitstream/handle/2152/25749/Esteva_Honors_Thesis_Metamaterial_Structural_Design.pdf?sequence=2" target="_blank"> UT Repositories </a>
-            </strong> </small>
-            <br>
-          </h3>
-          <p></p>
+              </div>
         </div>
       </div>
 
@@ -379,83 +379,70 @@
       </div>
 
       <div class="row featurette">
-        <div class="col-md-4">
-          <h3>
-            <img src="assets/google_health2.png" width="200"></img>
-          </h3>
+        <div class="col-xs-3">
+            <img src="assets/google_health2.png" class="experience-image"></img>
         </div>
-        <div class="col-md-8">
-          <h3>
+        <div class="col-xs-9 col-md-8">
+          <div class="experience-title">
             Intern, Google Research / Google[x]
-            <br>
-            <small><i> Accelerated Science Team </i> </small> <br>
-            <small><i> Deep Learning applied to image-to-image regression for large-scale drug screening </i> </small>
-            <br>
-          </h3>
+          </div>
+          <div class="experience-info">
+            Accelerated Science Team <br>
+            Deep Learning applied to image-to-image regression for large-scale drug screening
+          </div>
+
         </div>
       </div>
 
       <div class="row featurette">
-        <div class="col-md-4">
-          <h3>
+        <div class="col-xs-3 col-md-4">
             <a href="http://stvp.stanford.edu/ais/" target="_blank">
-              <img src="assets/ais.png" width="200"></img>
+              <img src="assets/ais.png" class="experience-image"></img>
             </a>
-          </h3>
         </div>
-        <div class="col-md-8">
-          <h3>
+        <div class="col-xs-9 col-md-8">
+          <div class="experience-title">
             Accel Ventures Innovation Scholar
-            <br>
-            <small>
+          </div>
+          <div class="experience-info">
               <i> Startup Consultant, Entrepreneur-in-Training </i> <br>
               Hosted by <a href="http://www.accel.com/" target="_blank"> Accel Partners </a> <br>
               Led by the <a href="http://stvp.stanford.edu/ais/" target="_blank">Stanford Technology Ventures Program</a>
-            </small>
-            <br>
-          </h3>
+          </div>
         </div>
       </div>
 
       <div class="row featurette">
-        <div class="col-md-4">
-          <h3>
+        <div class="col-xs-3 col-md-4">
             <a href="http://www.sandia.gov/z-machine/" target="_blank">
-              <img src="assets/zmachine2.png" width="200"></img>
+              <img src="assets/zmachine2.png" class="experience-image"></img>
             </a>
-          </h3>
         </div>
-        <div class="col-md-8">
-          <h3>
+        <div class="col-xs-9 col-md-8">
+          <div class="experience-title">
             Intern, Sandia National Laboratories
-            <br>
-            <small>
+          </div>
+          <div class="experience-info">
               <i> Computational Nuclear Fusion </i> <br>
               <i> Computational Metamaterials for Invisibility Cloaking </i> <br>
-            </small>
-            <br>
-          </h3>
+          </div>
         </div>
       </div>
 
       <div class="row featurette">
-        <div class="col-md-4">
-          <h3>
+        <div class="col-xs-3 col-md-4">
             <a href="http://www3.gehealthcare.com/en/products/categories/radiography/mobile_x-ray_systems" target="_blank">
-              <img src="assets/ge.png" width="200"></img>
+              <img src="assets/ge.png" class="experience-image"></img>
             </a>
-          </h3>
         </div>
-        <div class="col-md-8">
-          <h3>
+        <div class="col-xs-9 col-md-8">
+          <div class="experience-title">
             Intern, GE Healthcare
-            <br>
-            <small>
+          </div>
+          <div class="experience-info">
               <i> X-ray Imaging Team </i> <br>
               <i> UI Design for X-ray data analysis </i> <br>
-            </small>
-            <br>
-          </h3>
+          </div>
         </div>
       </div>
 
@@ -491,15 +478,16 @@
           </h1>
         </div>
         <div class="col-md-12">
-          <h4>
+          <p class="lead">
           [last name] @ cs dot stanford dot edu
           <br>
           <br>
           <u> Address: </u> <br>
+          Andre Esteva <br>
           Gates Computer Science Building, Rm 116 <br>
           353 Serra Mall <br>
           Stanford CA, 94305 <br>
-          </h4>
+          </p>
           <!-- FULL CV: UNCOMMENT THE FOLLOWING LINE -->
           <!-- <p> <a href="assets/AndreEsteva_CV.pdf" target="_blank" > Full CV </a><br> </p> -->
         </div>
