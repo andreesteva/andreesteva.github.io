@@ -60,11 +60,25 @@ body {
   height: 500px;
 }
 
-.carousel-heading {
+.header {
   font-weight: 300;
+  font-size: 70px;
+}
+
+.header-desc {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.img-header {
+  filter: blur(6px);
+}
+
+.carousel-heading {
+  font-weight: 400;
   /*color: #5a5a5a;*/
 
-  /*font-size: 40px;*/
+  font-size: 70px;
 
   /*line-height: 1;*/
   /*letter-spacing: -1px;*/
@@ -100,6 +114,7 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+  text-align: center;
 }
 
 
@@ -139,6 +154,6 @@ body {
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px;
+    margin-bottom: 80px;
   }
 }

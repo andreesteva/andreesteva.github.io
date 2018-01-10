@@ -49,9 +49,6 @@
       font-style: italic;
       font-size: small;
     }
-    .university-image {
-      width: 100%;
-    }
     .paper-image {
       width: 100%;
       margin-bottom: 20%;
@@ -59,6 +56,13 @@
     .paper-venue {
       margin-bottom: 3%;
       color: #668cff;
+    }
+    .presentation-title {
+      font-size: large;
+      margin-bottom: 1%;
+    }
+    .university-image {
+      width: 100%;
     }
 
     .experience-title{
@@ -103,8 +107,8 @@
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="assets/AndreEsteva_CV.pdf" target="_blank">CV</a></li>
                 <li><a href=""></a></li>
-                <li><a href="https://plus.google.com/+AndreEsteva" target="_blank">G+</a></li>
-                <li><a href="https://twitter.com/andreesteva" target="_blank">Twitter</a></li> -->
+                <li><a href="https://plus.google.com/+AndreEsteva" target="_blank">G+</a></li>a -->
+                <li><a href="https://twitter.com/andreesteva" target="_blank">Twitter</a></li>
                 <li><a href="assets/AndreEsteva_CV.pdf" target="_blank">CV</a></li>
                 <li><a href="https://www.linkedin.com/pub/andre-esteva/38/b24/ab6" target="_blank">LinkedIn</a></li>
                 <li><a href="http://andreesteva.github.io" target="_blank">BLOG</a></li>
@@ -125,13 +129,16 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="assets/Stanford1.jpg" alt="First slide" align="center" height="fullscreen">
+          <img class="img-header" src="assets/Stanford1.jpg" alt="First slide" align="center" height="fullscreen">
           <div class="container">
+
             <div class="carousel-caption">
-              <h1 class="carousel-heading">Andre Esteva</h1>
+              <div class="header">Andre Esteva</div>
               <!-- <h4 class="carousel-heading">Stanford PhD student </h4> -->
               <!-- <small> esteva _at_ cs.stanford.edu </small> <br> -->
             <img class="img-circle" src="assets/imgme.jpg" alt="Generic placeholder image" width="140" height="140">
+              <div class="header-desc">Stanford EE PhD Student</div>
+              <div class="header-desc">esteva [at] cs [dot] stanford [dot] edu</div>
 
             </div>
           </div>
@@ -222,17 +229,31 @@
           <h1 class="featurette-heading">
              <!-- About <hr> -->
              <hr>
+             About
           </h1>
+          <p class="lead" style="text-align:justify">I'm a Stanford University PhD student
+          in the <a href="http://ai.stanford.edu" target="_blank">Artificial Intelligence</a> Lab of Computer Science, advised by
+          <a href="http://robots.stanford.edu" target="_blank"> Sebastian Thrun</a>.
+          My research focus is in deep learning and computer vision, and my preferred application domain is healthcare.
+          My work spans dermatology, drug screening, neuroscience, and psychiatry.
+          I have interned at Google, Sandia National Labs, and GE Healthcare.
+          </p>
+          <p class="lead" style="text-align:justify">
+          At UT-Austin, I double majored in Electrical & Computer Engineering, and Pure Mathematics.
+          My research at the time was in metamaterials and invisibility cloaking as part of Andrea Alu's
+          <a href="http://users.ece.utexas.edu/~aalu/" target="_blank"> Metamaterials and Plasmonics Research Lab </a>.
+          Hook 'em horns.</p>
         </div>
       </div>
 
-      <div class="row featurette">
-        <div class="col-xs-4 col-md-4">
+<!--
+      <div class="row featurette" valign="top">
+        <div class="col-xs-3">
           <div class="university-image">
             <img src="assets/stanford_logo.png" width="100%"></img>
           </div>
         </div>
-        <div class="col-xs-8 col-md-8">
+        <div class="col-xs-9" valign="top">
           <h4 class="featurette-heading">Stanford PhD, <span class="text-muted">Artificial Intelligence </span><br>
           </h4>
           <p class="lead">I'm an Electrical Engineering PhD student in <a href="http://robots.stanford.edu" target="_blank"> Sebastian Thrun's Group </a> at Stanford, as part of the Artificial Intelligence Lab of Computer Science. My research focus is in machine learning and deep learning, and my preferred application domains are medical and biological systems. My current focus is in dermatology, where I am developing deep-learning algorithms to automatically track and diagnose skin cancers from images of patients. Previous work spans large-scale drug screening, neuroscience, and psychiatry. I have limited availability for consulting and advising. </p>
@@ -253,12 +274,13 @@
           </h4>
           <p class="lead">I double majored in Electrical & Computer Engineering, and Pure Mathematics. My research at the time was in invisibility cloaking as part of Andrea Alu's <a href="http://users.ece.utexas.edu/~aalu/" target="_blank"> Metamaterials and Plasmonics Research Lab </a>. Hook 'em horns.</p>
         </div>
-         <div class="col-xs-4 col-md-4">
+         <div class="col-xs-4">
           <div class="university-image">
             <img src="assets/ut_logo.png" width="100%" align="bottom"></img>
           </div>
         </div>
       </div>
+-->
 
 
       <!-- ~~~~~~~~~~~~~~~~~~  PUBLICATIONS -->
@@ -268,8 +290,33 @@
 
       <div class="row featurette" id="publications">
         <div class="col-sm-12">
-          <h1 class="featurette-heading">Publications <hr>
+          <hr>
+          <h1 class="featurette-heading">Publications
           </h1>
+        </div>
+      </div>
+
+      <div class="row featurette">
+        <div class="col-xs-3">
+          <div class="paper-image">
+            <img src="assets/seeing_more.png" width="100%"></img>
+          </div>
+        </div>
+        <div class="col-xs-9">
+          <div class="paper-title">
+              In-silico Labeling: Training Networks to Predict Fluorescent Labels in Unlabeled Images
+              </div>
+          <div class="paper-authors">
+              Eric Christiansen*, Samuel Yang, Dale Ando<sup>#</sup>, Ashkan Javaherian<sup>#</sup>, Gaia Skibinski<sup>#</sup>,
+              Scott Lipnick,<sup>#</sup>, Elliot Mount<sup>†</sup>, Alison O’Neil<sup>†</sup>, Kevan Shah<sup>†</sup>, Alicia K. Lee<sup>†</sup>, Piyush Goyal<sup>†</sup>,
+              Liam Fedus<sup>†</sup>, Ryan Poplin<sup>†</sup>, <strong>Andre Esteva</strong>, Lee Rubin, Philip Nelson*, Steven Finkbeiner*
+              <br>
+              <sup>#</sup>These authors made comparable contributions<br>
+              <sup>†</sup>These authors made comparable contributions
+              </div>
+          <div class="paper-venue">
+              In Press, Cell
+              </div>
         </div>
       </div>
 
@@ -342,31 +389,6 @@
       <div class="row featurette">
         <div class="col-xs-3">
           <div class="paper-image">
-            <img src="assets/seeing_more_4.png" width="100%"></img>
-          </div>
-        </div>
-        <div class="col-xs-9">
-          <div class="paper-title">
-              In-silico Labeling: Training Networks to Predict Fluorescent Labels in Unlabeled Images
-              </div>
-          <div class="paper-authors">
-              Eric Christiansen*, Samuel Yang, Dale Ando<sup>#</sup>, Ashkan Javaherian<sup>#</sup>, Gaia Skibinski<sup>#</sup>, 
-              Scott Lipnick,<sup>#</sup>, Elliot Mount<sup>†</sup>, Alison O’Neil<sup>†</sup>, Kevan Shah<sup>†</sup>, Alicia K. Lee<sup>†</sup>, Piyush Goyal<sup>†</sup>, 
-              Liam Fedus<sup>†</sup>, Ryan Poplin<sup>†</sup>, <strong>Andre Esteva</strong>, Lee Rubin, Philip Nelson*, Steven Finkbeiner*
-              <br>
-              <sup>#</sup>These authors made comparable contributions<br>
-              <sup>†</sup>These authors made comparable contributions
-              </div>
-          <div class="paper-venue">
-              Under review, Cell
-              </div>
-        </div>
-      </div>
-
-
-      <div class="row featurette">
-        <div class="col-xs-3">
-          <div class="paper-image">
             <img src="assets/pull.png" width="100%"></img>
           </div>
         </div>
@@ -375,14 +397,16 @@
               Vision-Based Classification of Developmental Disorders using Eye Movements
               </div>
           <div class="paper-authors">
-              Guido Pusiol, <strong> Andre Esteva</strong>, 
+              Guido Pusiol, <strong> Andre Esteva</strong>,
               Scott Hall,
-              Michael Frank, 
+              Michael Frank,
               Arnold Milstein,
               Li Fei-Fei
               </div>
           <div class="paper-venue">
+            <a href="https://link.springer.com/chapter/10.1007/978-3-319-46723-8_37" target="_blank">
             MICCAI 2016
+            </a>
             <br>
             <a href="assets/fxs_classify_miccai.pdf" target="_blank">PDF</a>
               </div>
@@ -481,33 +505,106 @@
 
       <div class="row featurette" id="publications">
         <div class="col-sm-12">
-          <h1 class="featurette-heading">Talks<hr>
+          <hr>
+          <h1 class="featurette-heading">Invited Talks
           </h1>
         </div>
       </div>
 
-      <div class="row featurette">
+      <div class="row featurette" id="publications">
         <div class="col-md-12">
-          <div class="paper-title">
-            Dermatologist-Level Classification of Skin Cancer with Deep Neural Networks
-              </div>
-          <div class="paper-authors">
-              <strong> Andre Esteva</strong>*, Brett Kuprel*, Rob Novoa, Justin Ko, Susan M. Swetter, Helen Blau, Sebastian Thrun
-              <br>
-              *equal contribution authors
-              </div>
-          <div class="paper-venue">
-            Division of Medical Imaging, US Food and Drug Administration, April 2017 <br>
-            NVIDIA GPU Technology Conference, April 2017 <br>
-            <a href="http://asiateleophth.org/wp-content/uploads/2017/07/Andre-Esteva-Artificial-Intelligence-in-Detecting-Tracking-Skin-Conditions.mp4" target="_blank">
-            Asia-Pacific Teleopthalmology Conference, 2017
+          <div class="presentation-title">
+            <i>Upcoming, </i>
+            <a href="https://www.escardio.org/Congresses-%26-Events/EHRA-Congress" target="_blank">
+              European Heart Association Congress
             </a>
-            <br>
-            CVPR, Medical Imaging Workshop, 2017
-              </div>
+            March, 2018.
+          </div>
         </div>
       </div>
 
+      <div class="row featurette" id="publications">
+        <div class="col-md-12">
+          <div class="presentation-title">
+            <a href="https://psb.stanford.edu/workshop/wkshp_explainability/" target="_blank">
+              Pacific Symposium on Biocomputing Workshop: Explainability in Machine Learning
+            </a>
+            January, 2018.
+          </div>
+        </div>
+      </div>
+
+      <div class="row featurette" id="publications">
+        <div class="col-md-12">
+          <div class="presentation-title">
+            <a href="http://exhibitionfloor.himss.org/chc2017/Public/SessionDetails.aspx?SessionID=1368" target="_blank">
+              AI Panel, Personal Connected Health Alliance Conference (Hosted by Partners.org)
+            </a>
+            May, 2017.
+          </div>
+        </div>
+      </div>
+
+      <div class="row featurette" id="publications">
+        <div class="col-md-12">
+          <div class="presentation-title">
+            <a href="http://www.montagnasymposium.org/pdfs/Final%20program17.pdf" target="_blank">
+              Montagna Symposium on the Biology of the Skin
+            </a>
+            May, 2017.
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row featurette" id="publications">
+        <div class="col-md-12">
+          <div class="presentation-title">
+            <a href="https://sites.google.com/view/cvprmcv17/home" target="_blank">
+              Computer Vision and Pattern Recognition Conference (CVPR) Medical Imaging Workshop.
+            </a>
+            July 2017.
+          </div>
+        </div>
+      </div>
+
+      <div class="row featurette" id="publications">
+        <div class="col-md-12">
+          <div class="presentation-title">
+            <a href="http://2017.asiateleophth.org/program-schedule" target="_blank">
+              Asia-Pacific Teleopthalmology Conference.
+            </a>
+            July 2017.
+            <a href="http://asiateleophth.org/wp-content/uploads/2017/07/Andre-Esteva-Artificial-Intelligence-in-Detecting-Tracking-Skin-Conditions.mp4" target="_blank">
+              Video.
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row featurette" id="publications">
+        <div class="col-md-12">
+          <div class="presentation-title">
+            <a href="https://gputechconf2017.smarteventscloud.com/connect/search.ww?searchType=session&showAllResults=true#loadSearch-searchPhrase=s7822&searchType=session&tc=0&sortBy=abbreviationSort&p=" target="_blank">
+              NVIDIA GPU Technology Conference.
+            </a>
+            May, 2017
+          </div>
+        </div>
+      </div>
+
+      <div class="row featurette" id="publications">
+        <div class="col-md-12">
+          <div class="presentation-title">
+            <a href="https://www.fda.gov/AboutFDA/CentersOffices/OrganizationCharts/ucm347835.htm" target="_blank">
+              US Food and Drug Administration (FDA), Center for Devices and Radiological Health.
+            </a>
+            May, 2017.
+          </div>
+        </div>
+      </div>
+
+<!--
       <div class="row featurette">
         <div class="col-md-12">
           <div class="paper-title">
@@ -553,6 +650,7 @@
               </div>
         </div>
       </div>
+-->
 
       <!-- ~~~~~~~~~~~~~~~~~~  Unrefereed Publications ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -588,7 +686,8 @@
 
       <div class="row featurette" id="experience">
         <div class="col-sm-12">
-          <h1 class="featurette-heading"> Videos <hr>
+          <hr>
+          <h1 class="featurette-heading"> Videos
           </h1>
         </div>
       </div>
@@ -621,13 +720,14 @@
 
       <div class="row featurette" id="experience">
         <div class="col-sm-12">
-          <h1 class="featurette-heading"> Experience <hr>
+          <hr>
+          <h1 class="featurette-heading"> Experience
           </h1>
         </div>
       </div>
 
       <div class="row featurette">
-        <div class="col-xs-3 col-md-4">
+        <div class="col-xs-3">
             <img src="assets/google_health2.png" class="experience-image"></img>
         </div>
         <div class="col-xs-9 col-md-8">
@@ -643,7 +743,7 @@
       </div>
 
       <div class="row featurette">
-        <div class="col-xs-3 col-md-4">
+        <div class="col-xs-3">
             <a href="http://stvp.stanford.edu/ais/" target="_blank">
               <img src="assets/ais.png" class="experience-image"></img>
             </a>
@@ -661,7 +761,7 @@
       </div>
 
       <div class="row featurette">
-        <div class="col-xs-3 col-md-4">
+        <div class="col-xs-3">
             <a href="http://www.sandia.gov/z-machine/" target="_blank">
               <img src="assets/zmachine2.png" class="experience-image"></img>
             </a>
@@ -678,9 +778,9 @@
       </div>
 
       <div class="row featurette">
-        <div class="col-xs-3 col-md-4">
+        <div class="col-xs-3">
             <a href="http://www3.gehealthcare.com/en/products/categories/radiography/mobile_x-ray_systems" target="_blank">
-              <img src="assets/ge.png" class="experience-image"></img>
+              <img src="assets/ge_2.png" class="experience-image"></img>
             </a>
         </div>
         <div class="col-xs-9 col-md-8">
@@ -720,9 +820,11 @@
       <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
+      <!--
       <div class="row featurette" id="contact">
         <div class="col-sm-12">
-          <h1 class="featurette-heading"> Contact <hr>
+          <hr>
+          <h1 class="featurette-heading"> Contact
           </h1>
         </div>
         <div class="col-md-12">
@@ -736,11 +838,9 @@
           353 Serra Mall <br>
           Stanford CA, 94305 <br>
           </p>
-          <!-- FULL CV: UNCOMMENT THE FOLLOWING LINE -->
-          <!-- <p> <a href="assets/AndreEsteva_CV.pdf" target="_blank" > Full CV </a><br> </p> -->
         </div>
       </div>
-
+      -->
 
       <!-- ~~~~~~~~~~~~~~~~~~  CV -->
       <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -766,10 +866,11 @@
 
 
       <!-- FOOTER -->
+      <!--
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <!-- <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p> -->
       </footer>
+      -->
 
     </div><!-- /.container -->
 
