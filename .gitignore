@@ -16,3 +16,5 @@ redirect_to_linkedin.html
 thrun/
 tmp/
 trunk/
+.DS_Store
+assets/.DS_Store
