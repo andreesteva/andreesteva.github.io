@@ -32,7 +32,14 @@
   ga('send', 'pageview');
 
 </script>
-
+<script>
+function scrollToMiddle(event, sectionId) {
+    event.preventDefault(); // Prevent the default anchor behavior
+    const element = document.getElementById(sectionId);
+    const offset = element.getBoundingClientRect().top + window.pageYOffset - (window.innerHeight / 2) + (element.clientHeight / 2);
+    window.scrollTo({ top: offset, behavior: 'smooth' });
+}
+</script>
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
@@ -236,18 +243,21 @@
              About
           </h1>
           <p class="lead" style="text-align:justify">
-            Andre Esteva is a researcher and entrepreneur in medical artificial intelligence.
-            He currently serves as CEO of <a href="https://artera.ai" target="_blank">Artera</a>, and was previously Head of Medical AI at Salesforce Research.
-            He has worked at Google Research, Sandia National Labs, GE Healthcare, and has co-founded four companies.
+            Andre Esteva is a researcher and entrepreneur in medical AI.
+            He currently serves as CEO and Founder of <a href="https://artera.ai" target="_blank">ArteraAI</a>, a growth-stage medical AI startup that personalizes therapy for cancer patients and is now standard of care (<a href="https://finance.yahoo.com/news/arteraai-announced-first-only-predictive-140000589.html" target="_blank">NCCN Guidelines</a>), reimbursed by <a href="https://finance.yahoo.com/news/arteraai-receives-medicare-payment-rate-140000365.html" target="_blank">Medicare</a>, and widely <a href="https://finance.yahoo.com/news/arteraai-secures-20-million-funding-140000521.html" target="_blank">deployed</a> internationally.
+            He was previously the Head of Medical AI at Salesforce Research, and held engineering positions at Google Research, Sandia National Labs, and GE Healthcare.
+            He has co-founded <a href="https://www.linkedin.com/in/andre-esteva-phd-ab6b2438/" target="_blank">four companies</a>.
           </p>
           <p class="lead" style="text-align:justify">
-            His research efforts have largely focused on medical AI diagnostics and precision medicine. His publications have made the covers of Nature and Nature Medicine, and have been featured in Cell, The Lancet, NeurIPS, and similar venues.
+            With over <a href="https://scholar.google.com/citations?user=MN8r_gMAAAAJ&hl=en" target="_blank">20,000 citations</a>, his research efforts have largely focused on medical AI diagnostics and precision medicine. 
+            His publications have made the covers of <a href="https://cs.stanford.edu/people/esteva/nature/" target="_blank">Nature</a> and <a href="https://www.nature.com/nm/volumes/26/issues/9" target="_blank">Nature Medicine</a>, and have been featured in Cell, The Lancet, NeurIPS, TIME,  and similar venues.
             These works have been widely covered by the WSJ, Fortune, BBC, The Economist, and hundreds of other news outlets.
           </p>
 
           <p class="lead" style="text-align:justify">
-          He obtained his PhD in Artificial Intelligence at Stanford, where his research was in deep learning and computer vision applied to healthcare.
-          He finished undergraduate degrees with highest honors in Electrical Engineering and Pure Math from UT-Austin and was awarded Engineering Valedictorian (formally, the Outstanding Scholar-Leader Award).
+          He obtained his PhD in Artificial Intelligence at Stanford, conducting research in medical AI.
+          In a landmark publication that made the cover of <a href="https://cs.stanford.edu/people/esteva/nature/" target="_blank">Nature</a>, he was the first to show that AI could match the performance of clinicians at medical diagnostics.
+          He finished undergraduate degrees with highest honors in Electrical Engineering and Pure Math from UT-Austin and was awarded <a href="https://www.ece.utexas.edu/news/ut-ece-student-andre-esteva-receives-outstanding-scholar-leader-award" target="_blank">Engineering Valedictorian</a> (formally, the Outstanding Scholar-Leader Award).
           </p>
 
           <!--
@@ -326,7 +336,7 @@
       </div>
 -->
 
-      <!-- ~~~~~~~~~~~~~~~~~~  PUBLICATIONS -->
+      <!-- ~~~~~~~~~~~~~~~~~~  COMPANIES -->
       <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -738,7 +748,9 @@
       <div class="row featurette">
         <div class="col-xs-3">
           <div class="paper-image">
-            <img src="assets/nature_med_cover.png" width="100%"></img>
+            <a href="https://www.nature.com/nm/volumes/26/issues/9", target="_blank">
+              <img src="assets/nature_med_cover.png" width="100%"></img>
+            </a>
           </div>
         </div>
         <div class="col-xs-9">
@@ -875,7 +887,9 @@
       <div class="row featurette">
         <div class="col-xs-3">
           <div class="paper-image">
-            <img src="assets/nature_medicine.png" width="100%"></img>
+            <a href="https://www.nature.com/nm/volumes/25/issues/1" target="_blank">
+              <img src="assets/nature_medicine.png" width="100%"></img>
+            </a>
           </div>
         </div>
         <div class="col-xs-9">
@@ -979,7 +993,7 @@
         </div>
       </div>
 
-       <div class="row featurette">
+       <div class="row featurette" id="nature-paper">
         <div class="col-xs-3">
           <div class="paper-image">
             <a href="http://cs.stanford.edu/people/esteva/nature" target="_blank">
@@ -1267,6 +1281,8 @@
       <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
+<!--
+
       <div class="row featurette" id="experience">
         <div class="col-sm-12">
           <hr>
@@ -1348,10 +1364,13 @@
         </div>
       </div>
 
+-->
       <!-- ~~~~~~~~~~~~~~~~~~  Presentations/Posters/etc. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!--
 
       <div class="row featurette" id="publications">
         <div class="col-sm-12">
@@ -1568,204 +1587,10 @@
           </div>
         </div>
       </div>
-
-      <!-- ~~~~~~~~~~~~~~~~~~  EXPERIENCE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-      <!--
-      <div class="row featurette" id="experience">
-        <div class="col-sm-12">
-          <hr>
-          <h1 class="featurette-heading"> Industry
-          </h1>
-        </div>
-      </div>
-
-      <div class="row featurette">
-        <div class="col-xs-3">
-            <img src="assets/cresta_logo.png" class="experience-image"></img>
-        </div>
-        <div class="col-xs-9 col-md-8">
-          <div class="experience-title">
-            Co-Founder @ Cresta Intelligence
-          </div>
-          <div class="experience-info">
-            Oct 2017 - Jan 2019 <br>
-            Cresta is an enterprise AI startup with a mission of building AI coaches (using NLP & RL) designed to turn normal sales agents into experts very quickly, by coaching them on what to do and say as they're speaking with customers.
-          </div>
-        </div>
-      </div>
-
-      <div class="row featurette">
-        <div class="col-xs-3">
-            <img src="assets/crv_sequoia_greylock.png" class="experience-image"></img>
-        </div>
-        <div class="col-xs-9 col-md-8">
-          <div class="experience-title">
-            Entrepreneur-in-Training @ Venture Capital Firms
-          </div>
-          <div class="experience-info">
-            May 2017 - September 2017 <br>
-            Charles River Ventures<br>
-            Sequoia Capital <br>
-            Greylock Partners <br>
-            Participated in various summer programs with venture capital firms, designed to train PhD students in entrepreneurship.
-          </div>
-        </div>
-      </div>
-
-      <div class="row featurette">
-        <div class="col-xs-3">
-            <a href="http://stvp.stanford.edu/ais/" target="_blank">
-              <img src="assets/ais.png" class="experience-image"></img>
-            </a>
-        </div>
-        <div class="col-xs-9 col-md-8">
-          <div class="experience-title">
-            Innovation Scholar @ Accel Ventures
-          </div>
-          <div class="experience-info">
-              September 2015 - September 2016 <br>
-              <i> Startup Consultant, Entrepreneur-in-Training </i> <br>
-              Hosted by <a href="http://www.accel.com/" target="_blank"> Accel Partners </a> <br>
-              Led by the <a href="http://stvp.stanford.edu/ais/" target="_blank">Stanford Technology Ventures Program</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="row featurette">
-        <div class="col-xs-3">
-            <img src="assets/google_health2.png" class="experience-image"></img>
-        </div>
-        <div class="col-xs-9 col-md-8">
-          <div class="experience-title">
-            Intern @ Google Research
-          </div>
-          <div class="experience-info">
-            June 2015 - September 2015 <br>
-            Accelerated Science Team <br>
-            Deep Learning applied to image-to-image regression for large-scale drug screening
-          </div>
-
-        </div>
-      </div>
-
-      <div class="row featurette">
-        <div class="col-xs-3">
-            <a href="http://www.sandia.gov/z-machine/" target="_blank">
-              <img src="assets/zmachine2.png" class="experience-image"></img>
-            </a>
-        </div>
-        <div class="col-xs-9 col-md-8">
-          <div class="experience-title">
-            Intern @ Sandia National Laboratories
-          </div>
-          <div class="experience-info">
-            May 2011 - July 2012 <br>
-              <i> Computational Nuclear Fusion </i> <br>
-              <i> Computational Metamaterials for Invisibility Cloaking </i> <br>
-          </div>
-        </div>
-      </div>
-
-      <div class="row featurette">
-        <div class="col-xs-3">
-            <a href="http://www3.gehealthcare.com/en/products/categories/radiography/mobile_x-ray_systems" target="_blank">
-              <img src="assets/ge_2.png" class="experience-image"></img>
-            </a>
-        </div>
-        <div class="col-xs-9 col-md-8">
-          <div class="experience-title">
-            Intern @ GE Healthcare
-          </div>
-          <div class="experience-info">
-            May 2009 - August 2009 <br>
-              <i> X-ray Imaging Team </i> <br>
-              <i> UI Design for X-ray data analysis </i> <br>
-          </div>
-        </div>
-      </div>
-
       -->
-
-
-      <!-- ~~~~~~~~~~~~~~~~~~  PRESS -->
-      <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-<!--       <div class="row featurette" id="contact">
-        <div class="col-sm-12">
-          <h1 class="featurette-heading"> Press <hr>
-          </h1>
-        </div>
-        <div class="col-md-12">
-          <p> <a href="http://www.ece.utexas.edu/news/ut-ece-student-andre-esteva-receives-outstanding-scholar-leader-award" target="_blank">
-            UT ECE Student Andre Esteva Receives Outstanding Scholar-Leader Award
-          </a> </p>
-
-        </div>
-      </div> -->
-
-
-      <!-- ~~~~~~~~~~~~~~~~~~  CONTACT -->
-      <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-      <!--
-      <div class="row featurette" id="contact">
-        <div class="col-sm-12">
-          <hr>
-          <h1 class="featurette-heading"> Contact
-          </h1>
-        </div>
-        <div class="col-md-12">
-          <p class="lead">
-          [last name] @ cs dot stanford dot edu
-          <br>
-          <br>
-          <u> Address: </u> <br>
-          Andre Esteva <br>
-          Gates Computer Science Building, Rm 116 <br>
-          353 Serra Mall <br>
-          Stanford CA, 94305 <br>
-          </p>
-        </div>
-      </div>
-      -->
-
-      <!-- ~~~~~~~~~~~~~~~~~~  CV -->
-      <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <!-- ~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-<!--       <div class="row featurette" id="cv">
-        <div class="col-sm-12">
-          <h1 class="featurette-heading"> CV <hr>
-          </h1>
-        </div>
-        <div class="col-md-12">
-          <p>
-            <a href="assets/AndreEsteva_CV.pdf" > Full CV </a><br>
-          </p>
-        </div>
-      </div> -->
-
-
-
 
       <!-- /END THE FEATURETTES -->
 
-
-      <!-- FOOTER -->
-      <!--
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-      </footer>
-      -->
 
     </div><!-- /.container -->
 
